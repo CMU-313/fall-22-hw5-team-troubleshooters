@@ -60,7 +60,7 @@ public class RouteResource extends BaseResource {
         // Get the document
         AclDao aclDao = new AclDao();
         if (!aclDao.checkPermission(documentId, PermType.WRITE, getTargetIdList(null))) {
-            throw new NotFoundException();
+                                    throw new NotFoundException();
         }
 
         // Get the route model
